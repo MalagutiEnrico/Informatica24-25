@@ -36,4 +36,5 @@ int main(){
     }
     media = (n1 + n2 + n3)/3;
     printf("La media dei tre numeri è: %d\n", media);
+    return 0;
 }
