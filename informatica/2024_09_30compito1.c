@@ -6,13 +6,16 @@ int main(){
     const int val2 = 5;
     printf("Inserire il numero: ");
     scanf("%d", &n1);
-    resto1 = n1%val1;
-    resto2 = n1%val2;
-    if(resto1 == 0 && resto2 == 0){
-        printf("Il numero %d è divisibile sia per 3 che per 5 contemporaneamente\n", n1);
+    if(n1 % val1 == 0){
+        if(n1 % val2 == 0){
+            printf("Il numero %d è divisibile sia per 3 che per 5\n", n1);
+        }
+        else{
+            printf("Il numero %d è divisibile per 3 ma non per 5\n", n1);
+        }
     }
     else{
-        printf("Il numero %d non è divisibile ne per 3 ne per 5 contemporaneamente\n", n1);
+        printf("Il numero %d non è divisibile ne per 3 ne per 5\n", n1);
     }
     return 0;
 }
