@@ -14,4 +14,5 @@ int main(){
     else{
         printf("Il numero %d non è divisibile ne per 3 ne per 5 contemporaneamente\n", n1);
     }
+    return 0;
 }
