@@ -17,4 +17,5 @@ int main(){
             printf("%d è minore di %d\n", a, b);
         }
     }
+    return 0;
 }
