@@ -15,7 +15,7 @@ int main(){
         }
     }
     else{
-        printf("Il numero %d non è divisibile ne per 3 ne per 5\n", n1);
+        printf("Il numero %d non è divisibile per 3\n", n1);
     }
     return 0;
 }
