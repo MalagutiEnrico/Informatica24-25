@@ -6,7 +6,7 @@ int main(){
     printf("Inserisci il numero: ");
     scanf("%d", &num);
     if(num<100 || num>999)
-        printf("Il numero è divisibile ")
+        printf("Il numero è divisibile ");
     
     {
         u = num % 10;
