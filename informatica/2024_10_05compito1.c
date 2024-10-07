@@ -20,7 +20,8 @@ int main(){
         if(k==0){
             printf("Il numero ha 3 cifre\n");
         }
-        if(k==0 && h==0){
+        if(k==0 &&
+         h==0){
             printf("Il numero ha 2 cifre\n");
         }
         if(k==0 && h==0 && da==0){
