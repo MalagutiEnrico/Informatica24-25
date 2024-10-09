@@ -6,4 +6,10 @@ int main(){
     int n1, n2, n3, n4, n5;
     printf("Inserisci i 5 numeri: ");
     scanf("%d%d%d%d%d", &n1, &n2, &n3, &n4, &n5);
+    if(n2==n1+1 && n3==n2+1 && n4==n3+1 && n5==n4+1){
+        printf("Questi numeri appartengono alla sequenza dei numeri naturali\n");
+    } else{
+        printf("Questi numeri non appartengono alla sequenza dei numeri naturali\n");
+    }
+    return 0;
 }
