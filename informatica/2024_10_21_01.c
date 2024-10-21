@@ -1,7 +1,16 @@
 /*Convertire un numero da decimale a binario introducendo un valore da 0 a 63*/
 #include <stdio.h>
+#include <math.h>
 int main(){
-    int num, n0, n1, n2, n3, n4, n5, quoz;
+    int num = 0;
+    int n0 = 0;
+    int n1 = 0;
+    int n2 = 0;
+    int n3 = 0;
+    int n4 = 0;
+    int n5 = 0;
+    int quoz = 0;
+    int numBin = 0;
     printf("Inserisci un numero compreso tra 0 e 63: ");
     scanf("%d", &num);
     quoz = num;
@@ -30,7 +39,8 @@ int main(){
             n5 = quoz%2;    
             quoz = quoz/2; 
         }
-        printf("Il numero decimale %d in binario vale: %d%d%d%d%d%d\n", num, n5, n4, n3, n2, n1, n0);
+        numBin = n5*pow(10, 5) + n4*pow(10, 4) + n3*pow(10, 3) + n2*pow(10, 2) + n1*pow(10, 1) + n0*pow(10, 0);
+        printf("Il numero decimale %d in binario vale: %d\n", num, numBin);
     }
     else
         printf("Il numero inserito è fuori dai valori\n");
