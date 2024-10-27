@@ -5,5 +5,17 @@ qualora il numero fosse a più cifre vi fermate alla prima somma delle cifre e p
 controllate se il risultato è divisibile per 3.*/
 #include <stdio.h>
 int main(){
-    
+    int n, somma, k, h, da, u;
+    printf("Inserisci il numero: ");
+    scanf("%d", &n);
+    u = n % 10;
+    da = (n % 100 - u) / 10;
+    h = (n % 1000 - da - u) / 100;
+    k = (n % 10000 - h - da - u) / 1000;
+    somma = k + h + da + u;
+    if(somma%3==0)
+        printf("Il numero %d è divisibile per 3\n", n);
+    else
+        printf("Il numero %d non è divisibile per 3\n", n);
+    return 0;
 }
