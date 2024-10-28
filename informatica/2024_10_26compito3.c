@@ -12,7 +12,8 @@ fare niente e uscire dal programma:ES: "Seleziona l'operazione da eseguire:
 #include <stdlib.h>
 #include <time.h>
 int main(){
-    int n1, n2, operatore;
+    float n1, n2; 
+    int operatore;
     printf("Calcolatrice tra numeri casuali\n");
     printf("Scegliere l'operazione:\n0. Termina\n1. Somma\n2. Differenza\n3. Moltiplicazione\n4. Divisione\n");
     scanf("%d", &operatore);
@@ -24,16 +25,16 @@ int main(){
         printf("Il programma è terminato\n");
         break;
         case 1:
-        printf("La somma tra %d e %d è %d\n", n1, n2, n1 + n2);
+        printf("La somma tra %.2f e %.2f è %.2f\n", n1, n2, n1 + n2);
         break;
         case 2: 
-        printf("La differenza tra %d e %d è %d\n", n1, n2, n1 - n2);
+        printf("La differenza tra %.2f e %.2f è %.2f\n", n1, n2, n1 - n2);
         break;
         case 3:
-        printf("Il prodotto tra %d e %d è %d\n", n1, n2, n1 * n2);
+        printf("Il prodotto tra %.2f e %.2f è %.2f\n", n1, n2, n1 * n2);
         break;
         case 4:
-        printf("Il quoziente tra %d e %d è %d\n", n1, n2, n1 / n2);
+        printf("Il quoziente tra %.2f e %.2f è %.2f\n", n1, n2, n1 / n2);
         break;
         default:
         printf("Numero inserito non valido\n");
