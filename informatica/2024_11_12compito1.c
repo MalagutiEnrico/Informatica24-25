@@ -4,7 +4,7 @@ Per esempio se l'utente inserisce 6 dovranno essere mostrati 1 1 2 3 5 8.*/
 #include <stdio.h>
 int main(){
     int numero;
-    int n1 = 1;
+    int n1 = 0;
     int n2 = 1;
     int n3;
     int contatore = 0;
@@ -15,7 +15,8 @@ int main(){
         printf("Inserisci un'altro numero: ");
         scanf("%d", &numero);
     }
-    while(contatore != numero){
+    printf("%d ", n2);
+    while(contatore != numero - 1){
         n3 = n2 + n1;
         n1 = n2;
         n2 = n3;
