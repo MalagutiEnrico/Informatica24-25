@@ -76,7 +76,6 @@ int main(){
     else{
         printf("L'importo inserito è corretto. Non c'è resto da erogare.\n");
     }
-    system("PAUSE");
     return 0;
 }
 /*Per consentire al programma di erogare più monete differenti come resto, bisogna confrontare il 
