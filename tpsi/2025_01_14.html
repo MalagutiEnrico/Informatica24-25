@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<hmtl>
+    <head>
+        <title>PROVA PRIMA DELLA VERIFICA</title>
+        <style>
+            body{
+                background-color: rgb(115, 255, 94);
+                font-family: 'Courier New', Courier, monospace;
+            }
+            p{
+                font-size: 10px;
+            }
+            #div1{
+                width: 500px;
+                height: 300px;
+                background-color: purple;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                float: right;
+            }
+            h1{
+                color: black;
+                font-family: serif;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>LA PAGINA HTML DEFINITIVA</h1>
+        <p>Il testo è alto 10 pixel</p><br>
+        <p>
+            Questo testo <font style="color: red; font-weight: bold;"> si trova di differenti </font> tipi all'interno della frase
+        </p><br>
+        <div id="div1">
+            <p>Il testo della div è diverso dal resto della pagina</p>
+            <ol type="a">
+                <li>Mercurio</li>
+                <li>Venere</li>
+                <li>Terra</li>
+            </ol>
+            <ol type="I">
+                <li>Marte</li>
+                <li>Giove</li>
+                <li>Saturno</li>
+            </ol>
+            <ul type="circle">
+                <li>Urano</li>
+                <li>Nettuno</li>
+                <li>Plutone</li>
+            </ul>
+        </div>
+        <br><br>
+        <table style="width: 1000px; height: 200px; border: 2px solid brown">
+            <tr>
+                <td style="border:2px solid brown"></td>
+                <td style="border:2px solid brown"></td>
+                <td style="border:2px solid brown"></td>
+                <td rowspan="4" style="border:2px solid brown"></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="border:2px solid brown"></td>
+                <!--<td style="border:2px solid brown"></td>-->
+                <td style="border:2px solid brown"></td>
+                <!--<td style="border:2px solid brown"></td>-->
+            </tr>
+            <tr>
+                <td rowspan="2" style="border:2px solid brown"></td>
+                <td style="border:2px solid brown"></td>
+                <td style="border:2px solid brown"></td>
+                <!--<td style="border:2px solid brown"></td>-->
+            </tr>
+            <tr>
+                <!--<td style="border:2px solid brown"></td>-->
+                <td style="border:2px solid brown"></td>
+                <td style="border:2px solid brown"></td>
+                <!--<td style="border:2px solid brown"></td>-->
+            </tr>
+        </table>
+        <br>
+        <h1>FORM</h1>
+        <form>
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome"><br>
+            <label for="cognome">Cognome:</label><br>
+            <input type="text" id="cognome" name="cognome"><br>
+            Data di Nascita:<br>
+            <input type="date" id="born_date" name="born_date" min="1900-01-01" max="2025-01-14"><br>
+            Genere:<br>
+            <input type="radio" id="genere" name="maschio">Maschio<br>
+            <input type="radio" id="genere" name="femmina">Femmina<br>
+            <input type="radio" id="genere" name="altro">Altro<br>
+            Lingue Parlate:<br>
+            <input type="checkbox" id="lingua" name="lingua1">Italiano<br>
+            <input type="checkbox" id="lingua" name="lingua2">Inglese<br>
+            <input type="checkbox" id="lingua" name="lingua3">Tedesco<br>
+            <label for="cars">Scegli la tua auto: </label><br>
+            <select name="cars" id="cars">
+                <option value="volvo">Volvo</option>
+                <option value="mercedes">mercedes</option>
+                <option value="Lamborghini">Lamborghini</option>
+            </select><br>
+            <br>
+            <input type="submit" value="Invia"><input type="reset" value="Svuota Campi">
+        </form>
+    </body>
+</hmtl>
