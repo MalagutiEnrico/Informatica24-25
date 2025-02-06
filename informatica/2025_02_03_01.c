@@ -11,10 +11,10 @@ int main(){
     do{
         printf("Inserisci il numero da convertire: ");
         scanf("%d", &num);
-        if(num<0 || num>255){
+        if(num<0){
             printf("Il numero inserito non è valido. Ritenta.\n");
         }
-    }while(num<0 || num>255);
+    }while(num<0);
     conv = converti_dec_bin(num);
     printf("Il numero %d in binario è %ld\n", num, conv);
     return 0;
