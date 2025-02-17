@@ -14,28 +14,27 @@ N.B.: nel testare il programma inserite ad esempio una volta n=7 e poi n=9*/
 void collatz(int *_n);
 
 int main(){
-    int n;
+    int n, lunghezza=0;
     do{
         printf("Inserisci un numero: ");
         scanf("%d", &n);
     }while(n<=0);
-    collatz(&n);
+    printf("La sequenza di %d è\': ");
+    lunghezza++;
+    while(n!=1){
+        collatz(&n);
+        printf("%d ", n);
+        lunghezza++;
+    }
+    printf("La lunghezza di Collatz è %d\n", lunghezza);
     return 0;
 }
 
 void collatz(int *_n){
-    int cnt=0;
-    while(*_n!=1){
-        if(cnt!=0){
-            if(*_n%2==0){
-                *_n /= 2;
-            }
-            else{
-                *_n = *_n*3+1;
-            }
-        }
-        printf("%d ", *_n);
-        cnt++;
+    if(*_n%2==0){
+        *_n /= 2;
     }
-    printf("\nLa lunghezza di Collatz è %d\n", cnt);
+    else{
+        *_n = *_n*3+1;
+    }
 }
