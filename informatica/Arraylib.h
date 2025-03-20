@@ -47,3 +47,10 @@ int somma(int vett[], int dim);
  * @param int dimensione del vettore
  * @return int somma degli elementi del vettore
  */
+
+float mediaVettore(int vett[], int dim);
+/**Funzione che calcola la media degli elementi di un vettore
+ * @param int vettore di cui sommare gli elementi
+ * @param int dimensione del vettore
+ * @return media degli elementi del vettore
+ */

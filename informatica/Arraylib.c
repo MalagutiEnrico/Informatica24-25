@@ -57,3 +57,7 @@ int somma(int vett[], int dim){
     }
     return somma;
 }
+
+float mediaVettore(int vett[], int dim){
+    return (float)somma(vett, dim) / dim;
+}
