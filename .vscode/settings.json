@@ -1,5 +1,7 @@
 {
     "files.associations": {
-        "2025_02_27_01.C": "cpp"
+        "2025_02_27_01.C": "cpp",
+        "arraylib.h": "c",
+        "stdio.h": "c"
     }
 }

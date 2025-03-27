@@ -19,8 +19,9 @@ int main(){
         v1[i] = v2[i];
         v2[i] = temp;
     }
-    printf("Vettori scambiati: \n");
+    printf("\nVettori scambiati: \n");
     stampaVettore(v1, DIM, ' ');
     printf("\n");
     stampaVettore(v2, DIM, ' ');
+    printf("\n");
 }
