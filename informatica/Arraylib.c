@@ -108,3 +108,12 @@ void riempiVettoreOrdinatoCasuale(int vett[], int dim, int minimo, int massimo) 
         vett[pos] = num;
     }
 }
+
+void scambiaVettori(int v1[], int v2[], int dim){
+    int temp;
+    for(int i=0; i<dim; i++){
+        temp = v1[i];
+        v1[i] = v2[i];
+        v2[i] = temp;
+    }
+}

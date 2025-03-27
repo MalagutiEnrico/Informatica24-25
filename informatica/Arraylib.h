@@ -89,22 +89,30 @@ void shiftDx (int vett[], int dim, int pos);
  * @param int[] vettore da spostare
  * @param int dimensione del vettore
  * @param int posizione da cui iniziare a spostare gli elementi 
- */
+*/
 
- int trovaPosizione (int vett[], int dim, int num);
- /**
-  * Funzione che ritorna alla posizione del numero all'interno di un vettore ordinato
-  * @param int[] vettore da spostare
-  * @param int dimensione del vettore
-  * @param int numero da cercare
-  * @return posizione dell'elemento del vettore
-  */
+int trovaPosizione (int vett[], int dim, int num);
+/**
+ * Funzione che ritorna alla posizione del numero all'interno di un vettore ordinato
+ * @param int[] vettore da spostare
+ * @param int dimensione del vettore
+ * @param int numero da cercare
+ * @return posizione dell'elemento del vettore
+*/
 
-  void riempiVettoreOrdinatoCasuale(int vett[], int dim, int minimo, int massimo);
-  /**
-   * Funzione che riempie un vettore con elementi casuali in maniera ordinata
-   * @param int[] vettore da spostare
-   * @param int dimensione del vettore
-   * @param int valore minimo con cui riempire il vettore
-   * @param int valore massimo con cui riempire il vettore
-   */
+void riempiVettoreOrdinatoCasuale(int vett[], int dim, int minimo, int massimo);
+/**
+ * Funzione che riempie un vettore con elementi casuali in maniera ordinata
+ * @param int[] vettore da spostare
+ * @param int dimensione del vettore
+ * @param int valore minimo con cui riempire il vettore
+ * @param int valore massimo con cui riempire il vettore
+*/
+
+void scambiaVettori(int v1[], int v2[], int dim);
+/**
+ * Funzione che scambia due vettori tra di loro
+ * @param int[] primo vettore
+ * @param int[] secondo vettore
+ * @param int dimensione dei vettori
+*/
