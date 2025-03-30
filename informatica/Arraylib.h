@@ -116,3 +116,17 @@ void scambiaVettori(int v1[], int v2[], int dim);
  * @param int[] secondo vettore
  * @param int dimensione dei vettori
 */
+
+void bubbleSort(int vett[], int dim);
+/**
+ * Funzione che ordina gli elementi di un vettore con l'algoritmo bubbleShort
+ * @param int[] vettore da ordinare
+ * @param int dimensione del vettore
+*/
+
+void bubbleSortDec(int vett[], int dim);
+/**
+ * Funzione che ordina gli elementi di un vettore in maniera decrescente
+ * @param int[] vettore da ordinare
+ * @param int dimensione del vettore
+*/

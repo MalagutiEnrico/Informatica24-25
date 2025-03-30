@@ -117,3 +117,35 @@ void scambiaVettori(int v1[], int v2[], int dim){
         v2[i] = temp;
     }
 }
+
+void bubbleSort(int vett[], int dim){
+    int temp, flag=0, i=0;
+    while(flag==0){
+        flag=1;
+        for(int j=0; j<dim-1-i; j++){
+            if(vett[j]>vett[j+1]){
+                flag=0;
+                temp=vett[j];
+                vett[j]=vett[j+1];
+                vett[j+1]=temp;
+            }
+        }
+        i++;
+    }
+}
+
+void bubbleSortDec(int vett[], int dim){
+    int temp, i=0, flag=0;
+    while(flag==0){
+        flag=1;
+        for(int j=0; j<dim-1-i; j++){
+            if(vett[j+1]>vett[j]){
+                flag=0;
+                temp=vett[j];
+                vett[j]=vett[j+1];
+                vett[j+1]=temp;
+            }
+        }
+        i++;
+    }
+}
