@@ -14,11 +14,7 @@ int main(){
     printf("\n");
     stampaVettore(v2, DIM, ' ');
     printf("\n");
-    for(int i=0; i<DIM; i++){
-        temp = v1[i];
-        v1[i] = v2[i];
-        v2[i] = temp;
-    }
+    scambiaVettori(v1, v2, DIM);
     printf("\nVettori scambiati: \n");
     stampaVettore(v1, DIM, ' ');
     printf("\n");

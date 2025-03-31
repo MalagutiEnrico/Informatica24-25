@@ -17,7 +17,6 @@ void riempiVettore(int vett[], int dim){
 }
 
 void riempiVettoreCasuale(int vett[], int dim, int min, int max){
-    srand(time(NULL));
     for(int i=0; i<dim; i++){
         vett[i] = rand()%(max-min+1)+min;
     }
@@ -98,7 +97,6 @@ int trovaPosizione (int vett[], int dim, int num){
 }
 
 void riempiVettoreOrdinatoCasuale(int vett[], int dim, int minimo, int massimo) {
-    srand(time(NULL));
     int num, pos;
     vett[0] = rand()%(massimo-minimo+1)+minimo;
     for(int i=1; i<dim; i++){
