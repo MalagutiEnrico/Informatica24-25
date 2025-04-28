@@ -148,6 +148,12 @@ void bubbleSortDec(int vett[], int dim){
     }
 }
 
+void scambia(int x, int y){
+    int temp = x;
+    x = y;
+    y = temp;
+}
+
 void quickSort(int v[], int dim, int inizio, int fine){
     int i, j, pivot;
         if(inizio < fine){

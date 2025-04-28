@@ -118,6 +118,11 @@ void riempiVettoreOrdinatoCasuale(int vett[], int dim, int minimo, int massimo);
 void scambiaVettori(int v1[], int v2[], int dim);
 
 /**
+ * funzione che scambia due elementi
+ */
+void scambia(int x, int y);
+
+/**
  * Funzione che ordina gli elementi di un vettore con l'algoritmo bubbleShort
  * @param int[] vettore da ordinare
  * @param int dimensione del vettore
