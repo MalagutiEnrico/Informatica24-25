@@ -13,11 +13,12 @@ int main(){
     do{
         printf("\n---------------Menu'---------------\n");
         printf("1-Carica il vettore\n2-Stampa il vettore\n3-ordina il vettore\n0-Termina e esci");
-        printf("Effettua la scelta: ");
+        printf("\nEffettua la scelta: ");
         scanf("%d", &scelta);
         switch(scelta){
         case 0:
             printf("Il programma è terminato.\n");
+            break;
         case 1:
             riempiVettore(vett, DIM);
             break;

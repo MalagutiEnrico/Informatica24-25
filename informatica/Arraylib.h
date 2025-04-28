@@ -120,7 +120,7 @@ void scambiaVettori(int v1[], int v2[], int dim);
 /**
  * funzione che scambia due elementi
  */
-void scambia(int x, int y);
+void scambia(int *x, int *y);
 
 /**
  * Funzione che ordina gli elementi di un vettore con l'algoritmo bubbleShort
