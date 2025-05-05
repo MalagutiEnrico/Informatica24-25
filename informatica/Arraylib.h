@@ -48,6 +48,13 @@ int massimo(int vett[], int dim);
 int minimo(int vett[], int dim);
 
 /**
+ * Funzione che scambia l'elemento minimo con l'elemento massimo di un vettore
+ * @param int[] vettore in cui effettuare lo scambio
+ * @param int dimensione del vettore
+ */
+
+void scambiaMinMax(int vett[], int dim);
+/**
  * Funzione che somma gli elementi di un vettore
  * @param int vettore di cui sommare gli elementi
  * @param int dimensione del vettore

@@ -12,7 +12,7 @@ int main(){
     int vett[DIM], scelta;
     do{
         printf("\n---------------Menu'---------------\n");
-        printf("1-Carica il vettore\n2-Stampa il vettore\n3-ordina il vettore\n0-Termina e esci");
+        printf("1-Carica il vettore\n2-Stampa il vettore\n3-ordina il vettore\n4. Scambia il valore minimo con il valore massimo\n0-Termina e esci");
         printf("\nEffettua la scelta: ");
         scanf("%d", &scelta);
         switch(scelta){
@@ -27,6 +27,9 @@ int main(){
             break;
         case 3:
             bubbleSort(vett, DIM);
+            break;
+        case 4:
+            scambiaMinMax(vett, DIM);
             break;
         default:
             printf("Valore inserito non valido.\n");

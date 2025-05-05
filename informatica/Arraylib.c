@@ -49,6 +49,22 @@ int minimo(int vett[], int dim){
     return min;
 }
 
+void scambiaMinMax(int vett[], int dim){
+    int max = vett[0], min = vett[0], posmax, posmin;
+    for(int i=1; i<dim; i++){
+        if(vett[i] < min){
+            min = vett[i];
+            posmin = i;
+        }
+        if(vett[i]>max){
+            max = vett[i];
+            posmax = i;
+        }
+        vett[posmin] = max;
+        vett[posmax] = min;
+    }
+}
+
 int somma(int vett[], int dim){
     int somma=0;
     for(int i=0; i<dim; i++){
